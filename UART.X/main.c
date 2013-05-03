@@ -59,7 +59,7 @@ void _low_ISR (void)
 **********************************************************/
 
 unsigned int DelayCount;
-char buff[255] = "Hallo, Raspberry Pi\r\n";
+char buff[200];
 
 unsigned char gpsReceive = 0;
 
@@ -72,7 +72,7 @@ void InterruptHandlerHigh(void)
     INTCONbits.GIE = 0;
     
         PIR1bits.RCIF = 0;
-       // PORTAbits.RA5 = !PORTAbits.RA5;
+       //PORTAbits.RA5 = 0;
         ReadGPS();
         WriteXbee();
 
@@ -117,6 +117,8 @@ void initChip(){
         INTCONbits.PEIE = 1;                //Enable low priotity interrupts
 
         PORTAbits.RA5 = 1;
+         PORTAbits.RA4 = 1;
+          PORTAbits.RA3 = 1;
 
 }
 
@@ -161,13 +163,15 @@ while(1){
 void ReadGPS(){
     int i = 0;
 
-
     do
     {
         PORTAbits.RA5 = !PORTAbits.RA5;
-        while(!DataRdyUSART());
+       // while(!DataRdyUSART()){
+            PORTAbits.RA4 = !PORTAbits.RA4;
+        
         buff[i] = ReadUSART();
         i++;
+        PORTAbits.RA3 = !PORTAbits.RA3;
     } while(i < 5);
     buff[i] = '\0';
 
@@ -187,7 +191,7 @@ void WriteXbee(){
   }
 
 void WriteTest(){
-    char GPS [50] = "Hallo, dit is een test";
+    char GPS [50] = "Hallo, dit is een test\0";
     int i = 0;
 
   do{
