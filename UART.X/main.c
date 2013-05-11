@@ -13,6 +13,9 @@
 #include <delays.h>
 #include <timers.h>
 #include <usart.h>
+#include <sw_uart.h>
+#include <string.h>
+
 
 #define BUF_SIZE 32
 #define ID 0x55
@@ -28,6 +31,8 @@ void InterruptHandlerHigh(void);
 void ReadGPS(void);
 void WriteXbee(void);
 void WriteTest(void);
+void ReadingUART(void);
+void WritingUART(void);
 void read_gps_2( void );
 
 #pragma config WDT = OFF
@@ -139,6 +144,57 @@ void initChip(){
 
 }
 
+/* DelayTXBitUART for sw_uart fucntions */
+void DelayTXBitUART(void)
+{
+	/* delay for ((((2*Fosc)/(4*baud))+1)/2) - 12 cycles */
+	/* dleay for ((((2*20,000,000)/(4*9600))+1)/2)-12 ~= 509 cycles */
+	Delay100TCYx(12);
+        Delay10TCYx(3);
+        Nop();
+	Nop();
+        Nop();
+	Nop();
+        Nop();
+	Nop();
+        Nop();
+	Nop();
+
+}
+
+
+/* DelayRXHalfBitUART for sw_uart fucntions */
+void DelayRXHalfBitUART(void)
+{
+	/* delay for ((((2*Fosc)/(8*baud))+1)/2)-9 cycles */
+	/* delay for ((((2*20,000,000)/(8*9600))+1)/2)-9 = 252 cycles */
+	Delay100TCYx(6);
+        Delay10TCYx(1);
+	Nop();
+	Nop();
+        Nop();
+	Nop();
+        Nop();
+	Nop();
+}
+
+
+/* DelayRXBitUART for sw_uart fucntions */
+void DelayRXBitUART(void)
+{
+	/* delay for ((((2*Fosc)/(4*baud))+1)/2) - 14 cylces */
+	/* delay for ((((2*20,000,000)/(4*9600))+1)/2)-14 ~= 507 cycles */
+	Delay100TCYx(12);
+        Delay10TCYx(3);
+        Nop();
+	Nop();
+        Nop();
+	Nop();
+        Nop();
+	Nop();
+
+}
+
 
 
 /*************************************************
@@ -152,6 +208,7 @@ void main(void)
 
 initChip();
 
+OpenUART();
 OpenUSART( USART_TX_INT_OFF &
    USART_RX_INT_OFF &
    USART_ASYNCH_MODE &
@@ -199,6 +256,54 @@ void WriteXbee(){
 
         } while( buff[i] != '\0' );
   }
+
+void ReadingUART(){
+    int i = 0;
+	char current_char;
+    do
+    {
+        current_char = ReadUSART();
+		buff[i] = current_char;
+		i++;
+
+    } while(current_char != '\n');
+}
+
+void UARTTest(){
+
+    char buffer[100];
+	int i = 3;
+	char c;
+
+	buffer[0] = '$';
+	buffer[1] = '0';
+	buffer[2] = '1';
+	//memset(buffer,0,100);
+	while(i < 100){
+
+
+
+
+
+		c = ReadUART();
+		//WriteUSART(c);
+
+		buffer[i] = c ;
+
+		if(c == 0xa){ // check if char is carriage return
+
+		putsUART(&buffer);
+		memset(buffer,0,100);
+		i=0;
+		break;
+		}
+
+		i++;
+	}
+
+}
+
+
 
 void WriteTest(){
     char GPS [50] = "Hallo, dit is een test\0";
