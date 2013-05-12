@@ -1,5 +1,5 @@
 MPLINK 4.37, Linker
-Linker Map File - Created Thu May 09 17:48:52 2013
+Linker Map File - Created Sat May 11 18:11:38 2013
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -8,37 +8,43 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                low_vector       code   0x000018    program   0x000004
               high_vector       code   0x000800    program   0x000004
                    .cinit    romdata   0x000804    program   0x00000e
-           .code___init.o       code   0x000812    program   0x000002
-         .romdata_uread.o    romdata   0x000814    program   0x000000
-         .idata_uread.o_i    romdata   0x000814    program   0x000000
-         .idata_udefs.o_i    romdata   0x000814    program   0x000000
-         .romdata_uopen.o    romdata   0x000814    program   0x000000
-         .idata_uopen.o_i    romdata   0x000814    program   0x000000
-         .romdata_udefs.o    romdata   0x000814    program   0x000000
-        .idata_uwrite.o_i    romdata   0x000814    program   0x000000
-        .romdata_uwrite.o    romdata   0x000814    program   0x000000
-             .stringtable    romdata   0x000814    program   0x000000
-         .romdata_c018i.o    romdata   0x000814    program   0x000000
-        .romdata___init.o    romdata   0x000814    program   0x000000
-          .romdata_main.o    romdata   0x000814    program   0x000000
-          .idata_main.o_i    romdata   0x000814    program   0x000001
-         .idata_uputs.o_i    romdata   0x000814    program   0x000000
-         .romdata_uputs.o    romdata   0x000814    program   0x000000
-        .idata___init.o_i    romdata   0x000815    program   0x000000
-         .idata_c018i.o_i    romdata   0x000815    program   0x000000
-            .code_udefs.o       code   0x000816    program   0x000000
-            .code_c018i.o       code   0x000816    program   0x000000
-                     page       code   0x00082a    program   0x000302
-             .code_main.o       code   0x000b2c    program   0x0000aa
-               _cinit_scn       code   0x000bd6    program   0x00009e
-            .code_uopen.o       code   0x000c74    program   0x00008a
-            .code_uputs.o       code   0x000cfe    program   0x00004c
-            .code_uread.o       code   0x000d4a    program   0x00003e
-                   STRING       code   0x000d88    program   0x000034
-             D10KTCYXCODE       code   0x000dbc    program   0x00002e
-           .code_uwrite.o       code   0x000dea    program   0x00002e
-                    .code       code   0x000e18    program   0x000020
-             _startup_scn       code   0x000e38    program   0x00001c
+              D10TCYXCODE       code   0x000812    program   0x000016
+           .code___init.o       code   0x000828    program   0x000002
+                     page       code   0x00082a    program   0x0004a6
+             .code_main.o       code   0x000cd0    program   0x0000aa
+               _cinit_scn       code   0x000d7a    program   0x00009e
+            .code_uopen.o       code   0x000e18    program   0x00008a
+                 UARTCODE       code   0x000ea2    program   0x000088
+            .code_uputs.o       code   0x000f2a    program   0x00004c
+         .code_putsuart.o       code   0x000f76    program   0x000048
+            .code_uread.o       code   0x000fbe    program   0x00003e
+                   STRING       code   0x000ffc    program   0x000034
+             D10KTCYXCODE       code   0x001030    program   0x00002e
+           .code_uwrite.o       code   0x00105e    program   0x00002e
+                    .code       code   0x00108c    program   0x000020
+             _startup_scn       code   0x0010ac    program   0x00001c
+             D100TCYXCODE       code   0x0010c8    program   0x00001c
+        .idata_uwrite.o_i    romdata   0x0010e4    program   0x000000
+        .romdata_uwrite.o    romdata   0x0010e4    program   0x000000
+        .romdata___init.o    romdata   0x0010e4    program   0x000000
+         .romdata_c018i.o    romdata   0x0010e4    program   0x000000
+      .idata_putsuart.o_i    romdata   0x0010e4    program   0x000000
+      .romdata_putsuart.o    romdata   0x0010e4    program   0x000000
+         .idata_uputs.o_i    romdata   0x0010e4    program   0x000000
+         .romdata_uputs.o    romdata   0x0010e4    program   0x000000
+         .romdata_udefs.o    romdata   0x0010e4    program   0x000000
+         .idata_udefs.o_i    romdata   0x0010e4    program   0x000000
+         .romdata_uread.o    romdata   0x0010e4    program   0x000000
+         .idata_uread.o_i    romdata   0x0010e4    program   0x000000
+         .romdata_uopen.o    romdata   0x0010e4    program   0x000000
+         .idata_uopen.o_i    romdata   0x0010e4    program   0x000000
+             .stringtable    romdata   0x0010e4    program   0x000000
+          .idata_main.o_i    romdata   0x0010e4    program   0x000001
+          .romdata_main.o    romdata   0x0010e4    program   0x000000
+        .idata___init.o_i    romdata   0x0010e5    program   0x000000
+         .idata_c018i.o_i    romdata   0x0010e5    program   0x000000
+            .code_udefs.o       code   0x0010e6    program   0x000000
+            .code_c018i.o       code   0x0010e6    program   0x000000
     .config_300003_main.o    romdata   0x300003    program   0x000001
                 MATH_DATA      udata   0x000000       data   0x000002
                  .tmpdata      udata   0x000002       data   0x000002
@@ -46,20 +52,23 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                 DELAYDAT1      udata   0x000005       data   0x000001
             .udata_main.o      udata   0x000100       data   0x0000ca
            .udata_c018i.o      udata   0x0001ca       data   0x00000a
-           .udata_udefs.o      udata   0x0001d4       data   0x000001
-            .idata_main.o      idata   0x0001d5       data   0x000001
-           .idata_uputs.o      idata   0x0001d6       data   0x000000
-           .udata_uputs.o      udata   0x0001d6       data   0x000000
-          .idata___init.o      idata   0x0001d6       data   0x000000
-          .udata___init.o      udata   0x0001d6       data   0x000000
-          .idata_uwrite.o      idata   0x0001d6       data   0x000000
-          .udata_uwrite.o      udata   0x0001d6       data   0x000000
-           .idata_udefs.o      idata   0x0001d6       data   0x000000
-           .idata_uread.o      idata   0x0001d6       data   0x000000
-           .udata_uread.o      udata   0x0001d6       data   0x000000
-           .idata_uopen.o      idata   0x0001d6       data   0x000000
-           .udata_uopen.o      udata   0x0001d6       data   0x000000
-           .idata_c018i.o      idata   0x0001d6       data   0x000000
+                 UARTDATA      udata   0x0001d4       data   0x000002
+           .udata_udefs.o      udata   0x0001d6       data   0x000001
+            .idata_main.o      idata   0x0001d7       data   0x000001
+           .idata_uputs.o      idata   0x0001d8       data   0x000000
+           .udata_uputs.o      udata   0x0001d8       data   0x000000
+        .idata_putsuart.o      idata   0x0001d8       data   0x000000
+        .udata_putsuart.o      udata   0x0001d8       data   0x000000
+          .idata___init.o      idata   0x0001d8       data   0x000000
+          .udata___init.o      udata   0x0001d8       data   0x000000
+          .idata_uwrite.o      idata   0x0001d8       data   0x000000
+          .udata_uwrite.o      udata   0x0001d8       data   0x000000
+           .idata_udefs.o      idata   0x0001d8       data   0x000000
+           .idata_uread.o      idata   0x0001d8       data   0x000000
+           .udata_uread.o      udata   0x0001d8       data   0x000000
+           .idata_uopen.o      idata   0x0001d8       data   0x000000
+           .udata_uopen.o      udata   0x0001d8       data   0x000000
+           .idata_c018i.o      idata   0x0001d8       data   0x000000
                    .stack      udata   0x000300       data   0x000100
             SFR_UNBANKED0      udata   0x000f66       data   0x00009a
 
@@ -70,61 +79,88 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                            ---------   ---------      
                             0x000000    0x000005      
                             0x000018    0x00001b      
-                            0x000800    0x000814      
-                            0x00082a    0x000e53      
+                            0x000800    0x0010e4      
                             0x300003    0x300003      
-            1610 out of 33048 program addresses used, program memory utilization is 4%
+            2288 out of 33048 program addresses used, program memory utilization is 6%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                   D10K_1   0x000dc8    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x000dd4    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x000dc6    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-             Delay10KTCYx   0x000dbc    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
-     InterruptHandlerHigh   0x000b32    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                OpenUSART   0x000c74    program     extern C:\MCC18\src\pmc_common\USART\uopen.c
-                  ReadGPS   0x000876    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                ReadUSART   0x000d4a    program     extern C:\MCC18\src\pmc_common\USART\uread.c
-                WriteTest   0x00092a    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-               WriteUSART   0x000dea    program     extern C:\MCC18\src\pmc_common\USART\uwrite.c
-                WriteXbee   0x0008cc    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-              _2jContinue   0x000da8    program     static C:\MCC18\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x000db2    program     static C:\MCC18\src\traditional\stdclib\memset.asm
-       _D10KTCYXCODE_0010   0x000dcc    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x000dd8    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                   D100_1   0x0010d6    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+                    D100x   0x0010d4    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+                   D10K_1   0x00103c    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x001048    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00103a    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x000822    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+                     D10x   0x00081a    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+             Delay100TCYx   0x0010c8    program     extern C:\MCC18\src\traditional\delays\d100tcyx.asm
+             Delay10KTCYx   0x001030    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x000812    program     extern C:\MCC18\src\traditional\delays\d10tcyx.asm
+           DelayRXBitUART   0x00089a    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+       DelayRXHalfBitUART   0x000878    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+           DelayTXBitUART   0x000852    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                  GetChar   0x000eca    program     static C:\MCC18\src\pmc_common\SW_UART\readuart.asm
+     InterruptHandlerHigh   0x000cd6    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                 OpenUART   0x000ea2    program     extern C:\MCC18\src\pmc_common\SW_UART\openuart.asm
+                OpenUSART   0x000e18    program     extern C:\MCC18\src\pmc_common\USART\uopen.c
+                  ReadGPS   0x0008e4    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                 ReadUART   0x000eb0    program     extern C:\MCC18\src\pmc_common\SW_UART\readuart.asm
+                ReadUSART   0x000fbe    program     extern C:\MCC18\src\pmc_common\USART\uread.c
+              ReadingUART   0x000998    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                  SendBit   0x000f06    program     static C:\MCC18\src\pmc_common\SW_UART\writuart.asm
+                SendStart   0x000f0a    program     static C:\MCC18\src\pmc_common\SW_UART\writuart.asm
+                 UARTTest   0x0009ee    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                 WaitChar   0x000eb8    program     static C:\MCC18\src\pmc_common\SW_UART\readuart.asm
+                WriteTest   0x000acc    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                WriteUART   0x000ef2    program     extern C:\MCC18\src\pmc_common\SW_UART\writuart.asm
+               WriteUSART   0x00105e    program     extern C:\MCC18\src\pmc_common\USART\uwrite.c
+                WriteXbee   0x00093a    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+              _2jContinue   0x00101c    program     static C:\MCC18\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x001026    program     static C:\MCC18\src\traditional\stdclib\memset.asm
+       _D100TCYXCODE_0008   0x0010d0    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0012   0x0010da    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0018   0x0010e0    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D10KTCYXCODE_0010   0x001040    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00104c    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x00081c    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x00081e    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x000820    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x000b30    program     static                          
-       ___return_lbl00001   0x000e52    program     static                          
-       ___return_lbl00002   0x000c72    program     static                          
-               __config_0   0x300003    program     static C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                   __init   0x000812    program     extern C:\MCC18\src\traditional\stdclib\__init.c
-            __zero_memory   0x000e18    program     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                _do_cinit   0x000bd6    program     extern C:\MCC18\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000cd4    program     static                          
+       ___return_lbl00001   0x0010c6    program     static                          
+       ___return_lbl00002   0x000e16    program     static                          
+       ___return_lbl00005   0x000876    program     static                          
+       ___return_lbl00006   0x000898    program     static                          
+       ___return_lbl00007   0x0008ba    program     static                          
+               __config_0   0x300003    program     static C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                   __init   0x000828    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+            __zero_memory   0x00108c    program     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                _do_cinit   0x000d7a    program     extern C:\MCC18\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
-                _high_ISR   0x000800    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                 _low_ISR   0x000018    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                   _reset   0x000b2c    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                 _startup   0x000e38    program     extern C:\MCC18\src\traditional\startup\c018i.c
-                compare_l   0x000e2e    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
-                copy_loop   0x000c48    program     static                          
-            copy_one_byte   0x000c4e    program     static                          
-                     done   0x000c72    program     static                          
-             done_copying   0x000c5c    program     static                          
-                 initChip   0x00082a    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                     jEnd   0x000dba    program     static C:\MCC18\src\traditional\stdclib\memset.asm
-                    jLoop   0x000d9c    program     static C:\MCC18\src\traditional\stdclib\memset.asm
-                     loop   0x000e48    program     static                          
-                   loop_h   0x000e26    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
-                   loop_l   0x000e30    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
-                     main   0x000852    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                   memset   0x000d88    program     extern C:\MCC18\src\traditional\stdclib\memset.asm
-                putsUSART   0x000cfe    program     extern C:\MCC18\src\pmc_common\USART\uputs.c
-               read_gps_2   0x000a5a    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                     test   0x000bf0    program     static                          
-               zero_block   0x000e26    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
+                _high_ISR   0x000800    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                 _low_ISR   0x000018    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                   _reset   0x000cd0    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                 _startup   0x0010ac    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                compare_l   0x0010a2    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
+                copy_loop   0x000dec    program     static                          
+            copy_one_byte   0x000df2    program     static                          
+                     done   0x000e16    program     static                          
+             done_copying   0x000e00    program     static                          
+                 initChip   0x00082a    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                     jEnd   0x00102e    program     static C:\MCC18\src\traditional\stdclib\memset.asm
+                    jLoop   0x001010    program     static C:\MCC18\src\traditional\stdclib\memset.asm
+                     loop   0x0010bc    program     static                          
+                   loop_h   0x00109a    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
+                   loop_l   0x0010a4    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
+                     main   0x0008bc    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                   memset   0x000ffc    program     extern C:\MCC18\src\traditional\stdclib\memset.asm
+                 putsUART   0x000f76    program     extern C:\MCC18\src\pmc_common\SW_UART\putsuart.c
+                putsUSART   0x000f2a    program     extern C:\MCC18\src\pmc_common\USART\uputs.c
+               read_gps_2   0x000bfc    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                     test   0x000d94    program     static                          
+               zero_block   0x00109a    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
                    ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -137,6 +173,7 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                   BAUDCON   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
               BAUDCONbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                       BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                 BitCount   0x0001d5       data     extern C:\MCC18\src\pmc_common\SW_UART\uartdata.asm
                    CCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                CCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                   CCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -161,7 +198,7 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                  DDRBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      DDRC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  DDRCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-               DelayCount   0x000100       data     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
+               DelayCount   0x000100       data     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
             DelayCounter1   0x000005       data     extern C:\MCC18\src\traditional\delays\delayd1.asm
             DelayCounter2   0x000004       data     extern C:\MCC18\src\traditional\delays\delayd2.asm
                   ECCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -349,7 +386,7 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                   UIEbits   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                       UIR   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                   UIRbits   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-             USART_Status   0x0001d4       data     extern C:\MCC18\src\pmc_common\USART\udefs.c
+             USART_Status   0x0001d6       data     extern C:\MCC18\src\pmc_common\USART\udefs.c
                     USTAT   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 USTATbits   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    WDTCON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -357,14 +394,15 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                      WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 __FPFLAGS   0x000001       data     extern C:\MCC18\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000001       data     extern C:\MCC18\src\traditional\math\cmath18.asm
-                  __tmp_0   0x000002       data     static C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                  __tmp_0   0x000002       data     static C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
                   __tmp_0   0x000002       data     static C:\MCC18\src\pmc_common\USART\uopen.c
-                     buff   0x000102       data     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                     buff   0x000102       data     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
                 curr_byte   0x0001cd       data     static C:\MCC18\src\traditional\startup\c018i.c
                curr_entry   0x0001cf       data     static C:\MCC18\src\traditional\startup\c018i.c
                  data_ptr   0x0001d1       data     static C:\MCC18\src\traditional\startup\c018i.c
-               gpsReceive   0x0001d5       data     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
+               gpsReceive   0x0001d7       data     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
                      prom   0x0001ca       data     static C:\MCC18\src\traditional\startup\c018i.c
+                 uartdata   0x0001d4       data     extern C:\MCC18\src\pmc_common\SW_UART\uartdata.asm
 
 
 
@@ -373,64 +411,94 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                 ---------  ---------  ---------  --------- ---------                
                    _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
        ___return_lbl00000   0x000004    program     static                          
-                 _low_ISR   0x000018    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                _high_ISR   0x000800    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                   __init   0x000812    program     extern C:\MCC18\src\traditional\stdclib\__init.c
-                 initChip   0x00082a    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                     main   0x000852    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                  ReadGPS   0x000876    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                WriteXbee   0x0008cc    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                WriteTest   0x00092a    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-               read_gps_2   0x000a5a    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                   _reset   0x000b2c    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-       ___return_lbl00000   0x000b30    program     static                          
-     InterruptHandlerHigh   0x000b32    program     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                _do_cinit   0x000bd6    program     extern C:\MCC18\src\traditional\startup\c018i.c
-                     test   0x000bf0    program     static                          
-                copy_loop   0x000c48    program     static                          
-            copy_one_byte   0x000c4e    program     static                          
-             done_copying   0x000c5c    program     static                          
-       ___return_lbl00002   0x000c72    program     static                          
-                     done   0x000c72    program     static                          
-                OpenUSART   0x000c74    program     extern C:\MCC18\src\pmc_common\USART\uopen.c
-                putsUSART   0x000cfe    program     extern C:\MCC18\src\pmc_common\USART\uputs.c
-                ReadUSART   0x000d4a    program     extern C:\MCC18\src\pmc_common\USART\uread.c
-                   memset   0x000d88    program     extern C:\MCC18\src\traditional\stdclib\memset.asm
-                    jLoop   0x000d9c    program     static C:\MCC18\src\traditional\stdclib\memset.asm
-              _2jContinue   0x000da8    program     static C:\MCC18\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x000db2    program     static C:\MCC18\src\traditional\stdclib\memset.asm
-                     jEnd   0x000dba    program     static C:\MCC18\src\traditional\stdclib\memset.asm
-             Delay10KTCYx   0x000dbc    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x000dc6    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x000dc8    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x000dcc    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x000dd4    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x000dd8    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-               WriteUSART   0x000dea    program     extern C:\MCC18\src\pmc_common\USART\uwrite.c
-            __zero_memory   0x000e18    program     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                   loop_h   0x000e26    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
-               zero_block   0x000e26    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
-                compare_l   0x000e2e    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
-                   loop_l   0x000e30    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
-                 _startup   0x000e38    program     extern C:\MCC18\src\traditional\startup\c018i.c
-                     loop   0x000e48    program     static                          
-       ___return_lbl00001   0x000e52    program     static                          
-               __config_0   0x300003    program     static C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                 _low_ISR   0x000018    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                _high_ISR   0x000800    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+              Delay10TCYx   0x000812    program     extern C:\MCC18\src\traditional\delays\d10tcyx.asm
+                     D10x   0x00081a    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x00081c    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x00081e    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x000820    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x000822    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+                   __init   0x000828    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+                 initChip   0x00082a    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+           DelayTXBitUART   0x000852    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+       ___return_lbl00005   0x000876    program     static                          
+       DelayRXHalfBitUART   0x000878    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+       ___return_lbl00006   0x000898    program     static                          
+           DelayRXBitUART   0x00089a    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+       ___return_lbl00007   0x0008ba    program     static                          
+                     main   0x0008bc    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                  ReadGPS   0x0008e4    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                WriteXbee   0x00093a    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+              ReadingUART   0x000998    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                 UARTTest   0x0009ee    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                WriteTest   0x000acc    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+               read_gps_2   0x000bfc    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                   _reset   0x000cd0    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+       ___return_lbl00000   0x000cd4    program     static                          
+     InterruptHandlerHigh   0x000cd6    program     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                _do_cinit   0x000d7a    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     test   0x000d94    program     static                          
+                copy_loop   0x000dec    program     static                          
+            copy_one_byte   0x000df2    program     static                          
+             done_copying   0x000e00    program     static                          
+                     done   0x000e16    program     static                          
+       ___return_lbl00002   0x000e16    program     static                          
+                OpenUSART   0x000e18    program     extern C:\MCC18\src\pmc_common\USART\uopen.c
+                 OpenUART   0x000ea2    program     extern C:\MCC18\src\pmc_common\SW_UART\openuart.asm
+                 ReadUART   0x000eb0    program     extern C:\MCC18\src\pmc_common\SW_UART\readuart.asm
+                 WaitChar   0x000eb8    program     static C:\MCC18\src\pmc_common\SW_UART\readuart.asm
+                  GetChar   0x000eca    program     static C:\MCC18\src\pmc_common\SW_UART\readuart.asm
+                WriteUART   0x000ef2    program     extern C:\MCC18\src\pmc_common\SW_UART\writuart.asm
+                  SendBit   0x000f06    program     static C:\MCC18\src\pmc_common\SW_UART\writuart.asm
+                SendStart   0x000f0a    program     static C:\MCC18\src\pmc_common\SW_UART\writuart.asm
+                putsUSART   0x000f2a    program     extern C:\MCC18\src\pmc_common\USART\uputs.c
+                 putsUART   0x000f76    program     extern C:\MCC18\src\pmc_common\SW_UART\putsuart.c
+                ReadUSART   0x000fbe    program     extern C:\MCC18\src\pmc_common\USART\uread.c
+                   memset   0x000ffc    program     extern C:\MCC18\src\traditional\stdclib\memset.asm
+                    jLoop   0x001010    program     static C:\MCC18\src\traditional\stdclib\memset.asm
+              _2jContinue   0x00101c    program     static C:\MCC18\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x001026    program     static C:\MCC18\src\traditional\stdclib\memset.asm
+                     jEnd   0x00102e    program     static C:\MCC18\src\traditional\stdclib\memset.asm
+             Delay10KTCYx   0x001030    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00103a    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x00103c    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x001040    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x001048    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00104c    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+               WriteUSART   0x00105e    program     extern C:\MCC18\src\pmc_common\USART\uwrite.c
+            __zero_memory   0x00108c    program     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                   loop_h   0x00109a    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
+               zero_block   0x00109a    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
+                compare_l   0x0010a2    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
+                   loop_l   0x0010a4    program     static C:\MCC18\src\traditional\proc\p18F2550.asm
+                 _startup   0x0010ac    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     loop   0x0010bc    program     static                          
+       ___return_lbl00001   0x0010c6    program     static                          
+             Delay100TCYx   0x0010c8    program     extern C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0008   0x0010d0    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+                    D100x   0x0010d4    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+                   D100_1   0x0010d6    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0012   0x0010da    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0018   0x0010e0    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+               __config_0   0x300003    program     static C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
                      SIGN   0x000000       data     extern C:\MCC18\src\traditional\math\cmath18.asm
                 __FPFLAGS   0x000001       data     extern C:\MCC18\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000001       data     extern C:\MCC18\src\traditional\math\cmath18.asm
-                  __tmp_0   0x000002       data     static C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                  __tmp_0   0x000002       data     static C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
                   __tmp_0   0x000002       data     static C:\MCC18\src\pmc_common\USART\uopen.c
             DelayCounter2   0x000004       data     extern C:\MCC18\src\traditional\delays\delayd2.asm
             DelayCounter1   0x000005       data     extern C:\MCC18\src\traditional\delays\delayd1.asm
-               DelayCount   0x000100       data     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
-                     buff   0x000102       data     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
+               DelayCount   0x000100       data     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                     buff   0x000102       data     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
                      prom   0x0001ca       data     static C:\MCC18\src\traditional\startup\c018i.c
                 curr_byte   0x0001cd       data     static C:\MCC18\src\traditional\startup\c018i.c
                curr_entry   0x0001cf       data     static C:\MCC18\src\traditional\startup\c018i.c
                  data_ptr   0x0001d1       data     static C:\MCC18\src\traditional\startup\c018i.c
-             USART_Status   0x0001d4       data     extern C:\MCC18\src\pmc_common\USART\udefs.c
-               gpsReceive   0x0001d5       data     extern C:\Users\Christopher\Documents\GitHub\TTREX-PIC\UART.X\main.c
+                 uartdata   0x0001d4       data     extern C:\MCC18\src\pmc_common\SW_UART\uartdata.asm
+                 BitCount   0x0001d5       data     extern C:\MCC18\src\pmc_common\SW_UART\uartdata.asm
+             USART_Status   0x0001d6       data     extern C:\MCC18\src\pmc_common\USART\udefs.c
+               gpsReceive   0x0001d7       data     extern C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c
                 UFRMLbits   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     UFRML   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      UFRM   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -446,28 +514,28 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                  UEIEbits   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 USTATbits   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     USTAT   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                     UCON   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  UCONbits   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                     UCON   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     UADDR   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 UADDRbits   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                 UCFGbits   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      UCFG   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                 UCFGbits   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      UEP0   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  UEP0bits   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                 UEP1bits   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      UEP1   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                     UEP2   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                 UEP1bits   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  UEP2bits   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                 UEP3bits   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                     UEP2   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      UEP3   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                     UEP4   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                 UEP3bits   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  UEP4bits   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                     UEP4   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  UEP5bits   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      UEP5   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  UEP6bits   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      UEP6   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                 UEP7bits   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      UEP7   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                 UEP7bits   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      UEP8   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  UEP8bits   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      UEP9   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -486,8 +554,8 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                     UEP15   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -502,35 +570,35 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                  DDRAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      DDRB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  DDRBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      DDRC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  DDRCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                   OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
               OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    EEDATA   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     EEADR   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                    RCSTA   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 RCSTAbits   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     TXSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 TXSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     TXREG   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -555,8 +623,8 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                   CCP1DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
               BAUDCONbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                   BAUDCON   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-              CCP2CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                   CCP2CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     CCPR2   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    CCPR2L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    CCPR2H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -571,13 +639,13 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
               SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
               SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                   SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
               SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -594,18 +662,18 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                  RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    WDTCON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                WDTCONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    LVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
               HLVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                   HLVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-               LVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                 T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
@@ -632,18 +700,18 @@ Linker Map File - Created Thu May 09 17:48:52 2013
                  POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                  POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
               INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                   INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
               INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                      PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                     PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
-                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                    TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                   TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                   TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm
                        PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F2550.asm

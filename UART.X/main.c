@@ -31,7 +31,7 @@ void InterruptHandlerHigh(void);
 void ReadGPS(void);
 void WriteXbee(void);
 void WriteTest(void);
-void ReadingUART(void);
+void UARTTest(void);
 void WritingUART(void);
 void read_gps_2( void );
 
@@ -116,33 +116,7 @@ void InterruptHandlerHigh(void)
 /*************************************************
 			Initialize the CHIP
 **************************************************/
-void initChip(){
-    ADCON1 = 0x00;		//Turn off ADcon
-	CMCON = 0x00;		//Turn off Comparator
-	PORTA = 0x00;
-	TRISA = 0x00;
-	PORTB = 0x00;
-	TRISB = 0xF0;
-	PORTC = 0x00;
-	TRISC = 0x00;
-        TRISCbits.TRISC6 = 1;
-        TRISCbits.TRISC7 = 1;
 
-
-        RCONbits.IPEN = 1;                  //Set to priority mode
-
-        IPR1bits.RCIP=1;                    //USART Receive Interrupt Priority 0 = Low priority
-
-        //PIR1bits.RCIF = 0;                  //The flag for the USART_RX interrupt needs to be set to zero.
-        PIE1bits.RCIE= 1;
-        INTCONbits.GIE = 0; //DISABLED               //Enable high priority Interrupts
-        INTCONbits.PEIE = 0;                //Enable low priotity interrupts
-
-        PORTAbits.RA5 = 1;
-         PORTAbits.RA4 = 1;
-          PORTAbits.RA3 = 1;
-
-}
 
 /* DelayTXBitUART for sw_uart fucntions */
 void DelayTXBitUART(void)
@@ -195,6 +169,45 @@ void DelayRXBitUART(void)
 
 }
 
+void initChip(){
+    ADCON1 = 0x00;		//Turn off ADcon
+	CMCON = 0x00;		//Turn off Comparator
+	PORTA = 0x00;
+	TRISA = 0x00;
+	PORTB = 0x00;
+	TRISB = 0xF0;
+	PORTC = 0x00;
+	TRISC = 0x00;
+        TRISCbits.TRISC6 = 1;
+        TRISCbits.TRISC7 = 1;
+
+
+        RCONbits.IPEN = 1;                  //Set to priority mode
+
+        IPR1bits.RCIP=1;                    //USART Receive Interrupt Priority 0 = Low priority
+
+        //PIR1bits.RCIF = 0;                  //The flag for the USART_RX interrupt needs to be set to zero.
+        PIE1bits.RCIE= 1;
+        INTCONbits.GIE = 0; //DISABLED               //Enable high priority Interrupts
+        INTCONbits.PEIE = 0;                //Enable low priotity interrupts
+
+        PORTAbits.RA5 = 1;
+         PORTAbits.RA4 = 1;
+          PORTAbits.RA3 = 1;
+
+}
+
+void initGPS(){
+
+	char instr[][];
+	int i = 0;
+	int maxInstr
+
+	for(i = 0; i<maxInstr; i++){
+		WriteGPS(instr[i]);
+	}
+}
+
 
 
 /*************************************************
@@ -207,6 +220,7 @@ void main(void)
 
 
 initChip();
+initGPS();
 
 OpenUART();
 OpenUSART( USART_TX_INT_OFF &
@@ -225,7 +239,7 @@ INTCONbits.PEIE = 1;
 
 while(1){
     
-     read_gps_2();
+     UARTTest();
       
     }
 }
@@ -250,59 +264,17 @@ void WriteXbee(){
    do
         { // Transmit a byte
         i++;
-        WriteUSART(buff[i]);
+        putsUART(buff[i]);
         
         while(BusyUSART());
 
         } while( buff[i] != '\0' );
   }
 
-void ReadingUART(){
-    int i = 0;
-	char current_char;
-    do
-    {
-        current_char = ReadUSART();
-		buff[i] = current_char;
-		i++;
+void WriteGPS(char bufferGPS[]){
 
-    } while(current_char != '\n');
-}
-
-void UARTTest(){
-
-    char buffer[100];
-	int i = 3;
-	char c;
-
-	buffer[0] = '$';
-	buffer[1] = '0';
-	buffer[2] = '1';
-	//memset(buffer,0,100);
-	while(i < 100){
-
-
-
-
-
-		c = ReadUART();
-		//WriteUSART(c);
-
-		buffer[i] = c ;
-
-		if(c == 0xa){ // check if char is carriage return
-
-		putsUART(&buffer);
-		memset(buffer,0,100);
-		i=0;
-		break;
-		}
-
-		i++;
-	}
-
-}
-
+     putsUSART(&bufferGPS);
+	 memset(buffer,0,100);
 
 
 void WriteTest(){
