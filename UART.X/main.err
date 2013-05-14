@@ -1,2 +1,3 @@
-Warning[2054] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 295 : suspicious pointer conversion
-Warning[2054] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 349 : suspicious pointer conversion
+Warning[2054] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 269 : suspicious pointer conversion
+Warning[2054] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 277 : suspicious pointer conversion
+Warning[2054] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 323 : suspicious pointer conversion
