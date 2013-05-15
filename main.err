@@ -1,2 +1,7 @@
-Warning[2054] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 268 : suspicious pointer conversion
-Warning[2054] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 276 : suspicious pointer conversion
+Error[1205] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 232 : unknown member 'RCIE' in '__tag_106'
+Error[1131] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 232 : type mismatch in assignment
+Warning[2054] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 254 : suspicious pointer conversion
+Warning[2054] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 300 : suspicious pointer conversion
+Error[1205] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 334 : unknown member 'RCIF' in '__tag_106'
+Error[1122] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 334 : scalar operand expected for '!' operator
+Error[1118] C:\Users\Dries\Documents\GitHub\TTREX-PIC\UART.X\main.c 335 : scalar type expected in 'while' statement
